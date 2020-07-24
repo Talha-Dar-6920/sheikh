@@ -368,6 +368,10 @@ p {
     .sm-con img {
         height: 15vh;
     }
+    .offer {
+        visibility: hidden;
+        display: none;
+    }
     .categories .small-container {
         display: flex;
         flex-direction: column;
