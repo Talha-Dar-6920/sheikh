@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pasha's |Ecommercs website design </title>
-    <link rel="stylesheet" href="http://stackpath.bootstrapcd.com/font-awesome.4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 
                 </div>
                 <nav>
-                    <ul>
+                    <ul id="menuitem">
                         <li> <a href=" ">Home</a></li>
                         <li> <a href=" ">Products</a></li>
                         <li> <a href=" ">About</a></li>
@@ -25,6 +25,8 @@
                         <li> <a href=" ">Account</a></li>
                     </ul>
                 </nav>
+                <img class="cart" src="./img/cart.png" alt="cart" width="30px" height="30px">
+                <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
 
             </div>
 
@@ -46,7 +48,6 @@
             <img class="featured_img" src="img/4.jpg">
             <img class="featured_img" src="img/5.jpg">
         </div>
-    </div>
     </div>
     <!------fetured product---->
 
@@ -165,6 +166,28 @@
             </div>
         </div>
     </div>
+    <!-- -----------brands--------- -->
+    <div class="brand">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="img/logo-coca-cola.png">
+                </div>
+                <div class="col-5">
+                    <img src="img/logo-godrej.png">
+                </div>
+                <div class="col-5">
+                    <img src="img/logo-oppo.png">
+                </div>
+                <div class="col-5">
+                    <img src="img/logo-paypal.png">
+                </div>
+                <div class="col-5">
+                    <img src="img/logo-philips.png">
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- ------------foter------ -->
     <footer class="footer">
         <div class="small-container">
@@ -193,7 +216,19 @@
         <hr>
         <p class="copyright">Copyright 2020 - Pasha's</p>
     </footer>
+    <!-- ------------js for menu------ -->
+    <script>
+        var menuitem = document.getElementById("menuitem");
+        menuitem.style.maxHeight = "0px";
 
+        function menutoggle() {
+            if (menuitem.style.maxHeight == "0px") {
+                menuitem.style.maxHeight = "200px"
+            } else {
+                menuitem.style.maxHeight = "0px"
+            }
+        }
+    </script>
 </body>
 
 </html>

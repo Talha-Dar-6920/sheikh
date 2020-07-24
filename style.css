@@ -273,3 +273,150 @@ p {
     color: white;
     text-align: center;
 }
+
+
+/* ---------brands----- */
+
+.brand {
+    margin: 100px auto;
+}
+
+.col-5 {
+    width: 160px;
+}
+
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover {
+    filter: grayscale(0);
+}
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+.cart {
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    margin-left: 20px;
+}
+
+
+/* ----------query for menu ------- */
+
+@media only screen and (max-width:800px) {
+    body {
+        padding: 0;
+    }
+    .hader {
+        height: 80vh;
+    }
+    .hader h1 {
+        font-size: 3rem;
+    }
+    .hader h1 span {
+        font-size: 1rem;
+        letter-spacing: 0.5rem;
+    }
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 10px;
+        background: #333;
+        width: 84%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: #fff;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    .cart {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-right: 0;
+    }
+    .sm-con .feature_image {
+        height: 30vh;
+    }
+    .offer {
+        margin-top: 5rem;
+        border-bottom-left-radius: 50%;
+    }
+    .offer .col-2 {
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    .featured_img {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .sm-con img {
+        height: 15vh;
+    }
+    .categories .small-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* media qoery for mobile  */
+
+@media only screen and (max-width:600px) {
+    .row {
+        text-align: center;
+    }
+    .sm-con .featured-container {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+    .feature-container {
+        width: 108%;
+        margin: .5rem 0;
+    }
+    .sm-con img {
+        height: 25vh;
+    }
+    .sm-con .feature_image {
+        width: 100%;
+    }
+    .footer .small-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .col-3 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .offer {
+        visibility: hidden;
+        display: none;
+    }
+    .reviews {
+        margin-top: 2rem;
+    }
+    .footer ul {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 1.5rem;
+    }
+}
