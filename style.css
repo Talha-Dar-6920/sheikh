@@ -315,9 +315,6 @@ p {
     body {
         padding: 0;
     }
-    .hader {
-        height: 80vh;
-    }
     .hader h1 {
         font-size: 3rem;
     }
@@ -381,6 +378,9 @@ p {
 /* media qoery for mobile  */
 
 @media only screen and (max-width:600px) {
+    .hader {
+        height: 80vh;
+    }
     .row {
         text-align: center;
     }
